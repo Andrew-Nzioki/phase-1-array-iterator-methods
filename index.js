@@ -67,3 +67,14 @@ function blueFilter(collection) {
   }
   
   blueFilter(users);
+
+  function colorFilter(collection, color) {
+    for (const user of collection) {
+      if (user.favoriteColor === color) {
+        console.log(user.firstName);
+      }
+    }
+  }
+  
+  colorFilter(users, "Red");
+  // LOG: Kate
